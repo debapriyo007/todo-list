@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="#">
+    <a href="https://deb-todo-list.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -42,7 +42,7 @@
 Todo App. Maintain your tasks easily. Remembers everything. Switch between active, completed and all tasks.
 
 - Where can I see your demo?
-  [Live Demo](#)
+  [Live Demo](https://deb-todo-list.netlify.app/)
 
 - What was your experience?
   It was amazing it's my first React app.
