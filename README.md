@@ -43,7 +43,7 @@
 Todo App. Maintain your tasks easily. Remembers everything. Switch between active, completed and all tasks.
 
 - Where can I see your demo?
-  [Live Demo](https://todo-kv.netlify.app/)
+  [Live Demo](#)
 
 - What was your experience?
   It was amazing it's my first React app.
@@ -99,7 +99,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/vatsalsinghkv/todo-app-master
+$ git clone https://github.com/debapriyo007/todo-list
 
 # Install dependencies
 $ yarn install
@@ -108,14 +108,5 @@ $ yarn install
 $ yarn start
 ```
 
-## Acknowledgements
 
-- [Illustrations by Storyset](https://storyset.com/)
 
-## Contact
-
-- Github - [@vatsalsinghkv](https://github.com/vatsalsinghkv)
-- Twitter - [@vatsalsinghkv](https://www.twitter.com/vatsalsinghkv)
-- Instagram - [@vatsal.sing.hkv](https://www.instagram.com/vatsal.singh.kv)
-- Facebook - [@vatsalsinghkv](https://www.facebook.com/vatsal.singh.kv)
-- Frontend Mentor - [@vatsalsinghkv](https://www.frontendmentor.io/profile/vatsalsinghkv)
