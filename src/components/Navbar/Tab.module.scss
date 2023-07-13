@@ -1,0 +1,58 @@
+@use '../../sass/mixins' as *;
+@use '../../sass/variables' as *;
+
+.tab {
+	&,
+	&:link,
+	&:visited {
+		@include btnReset;
+
+		font: 1.4rem var(--font-primary);
+		font-weight: 600;
+		width: 20%;
+
+		@media only screen and (max-width: $md-sm) {
+			width: 30%;
+		}
+
+		@media only screen and (max-width: $sm) {
+			width: auto;
+		}
+
+		text-transform: capitalize;
+
+		padding: 1.5rem 3rem;
+		position: relative;
+	}
+
+	&:active,
+	&:focus,
+	&.active,
+	&.active:hover {
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 3px;
+			width: 100%;
+
+			border-radius: 10px 10px 0 0;
+
+			background-color: var(--color-secondary);
+		}
+	}
+
+	&:hover {
+		&::after {
+			content: '';
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			left: 0;
+			bottom: 0;
+
+			background-color: rgba($color: #2f80ed, $alpha: 0.6);
+		}
+	}
+}

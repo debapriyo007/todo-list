@@ -1,0 +1,55 @@
+@use '../../sass/mixins' as *;
+
+.form {
+	width: 100%;
+	margin-bottom: 3rem;
+	display: flex;
+}
+
+.input {
+	flex: 1;
+	margin-right: 2rem;
+	height: 5.6rem;
+	padding: 0 1rem;
+
+	font-size: 1.4rem;
+
+	border: 1px solid var(--color-grey-2);
+	border-radius: 12px;
+
+	&::placeholder {
+		font-family: var(--font-primary);
+		color: var(--color-grey-2);
+	}
+
+	&:active,
+	&:focus {
+		transition: all 0.2s;
+		outline-color: var(--color-secondary);
+	}
+}
+
+.btn {
+	&,
+	&:link,
+	&:visited {
+		@include btnReset;
+		width: 10.9rem;
+		height: 5.6rem;
+
+		color: #fff;
+		background: var(--color-secondary);
+		box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+		border-radius: 12px;
+	}
+
+	&:hover {
+		@include btnShadow(0.75rem, 1.5rem, -2px, 0.1);
+	}
+
+	&:active,
+	&:focus {
+		outline: none;
+		@include btnShadow(0.5rem, 1rem, -1px, 0.1);
+	}
+}

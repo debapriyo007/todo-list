@@ -1,0 +1,25 @@
+@use '../../sass/mixins' as *;
+
+.btn {
+	&,
+	&:link,
+	&:visited {
+		padding: 5px;
+
+		margin-left: auto;
+		color: var(--color-grey-2);
+
+		@include flexCenter;
+		@include btnReset;
+	}
+
+	&:hover {
+		color: var(--color-delete);
+	}
+
+	&:active,
+	&:focus {
+		outline: none;
+		color: var(--color-delete);
+	}
+}

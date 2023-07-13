@@ -1,0 +1,148 @@
+@use '../../sass/mixins' as *;
+@use '../../sass/variables' as *;
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(#000, 0.8);
+	backdrop-filter: blur(3px);
+	z-index: 50;
+}
+
+/* MODAL */
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+
+	padding: 3rem 4rem;
+	background-color: #fff;
+
+	width: 50%;
+
+	@media only screen and (max-width: $lg) {
+		width: 60%;
+	}
+
+	@media only screen and (max-width: $md) {
+		padding: 3rem;
+		width: 70%;
+	}
+
+	@media only screen and (max-width: $md-sm) {
+		padding: 3rem;
+		width: 80%;
+	}
+
+	@media only screen and (max-width: $sm) {
+		width: 90%;
+	}
+
+	@include boxShadow(2rem, 4rem, 0.2);
+	border-radius: 5px;
+
+	z-index: 100;
+	overflow: hidden;
+
+	transform: translate(-50%, -65%) scale(1);
+
+	header {
+		margin-bottom: 1.5rem;
+	}
+
+	.btn-group {
+		margin-left: auto;
+		margin-top: auto;
+		display: flex;
+
+		@media only screen and (max-width: $md-sm) {
+			margin: 0;
+			justify-content: center;
+			// display: block;
+		}
+
+		Button {
+			&:not(:last-child) {
+				margin-right: 1rem;
+			}
+		}
+	}
+
+	// MODAL CLOSE
+	&__close {
+		background: none;
+		border: none;
+		display: inline-block;
+
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+
+		span {
+			display: block;
+		}
+
+		cursor: pointer;
+
+		color: var(--color-grey-1);
+		transition: all 0.3s;
+
+		&:hover {
+			color: var(--color-delete);
+		}
+	}
+
+	&__content {
+		display: flex;
+
+		@media only screen and (max-width: $md-sm) {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		&--left {
+			img {
+				display: block;
+				width: 100%;
+			}
+
+			width: calc(100% / 2.9);
+			@media only screen and (max-width: $md-sm) {
+				width: 40%;
+				margin: 0 auto;
+			}
+
+			@media only screen and (max-width: $sm) {
+				width: 50%;
+			}
+		}
+
+		&--right {
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			padding: 2.5rem 0 1rem 0;
+			padding-left: 3rem;
+
+			@media only screen and (max-width: $md) {
+				width: 100%;
+			}
+
+			@media only screen and (max-width: $md-sm) {
+				padding: 0;
+				padding-top: 2rem;
+				text-align: center;
+			}
+		}
+	}
+
+	&__text {
+		font-size: 1.4rem;
+		// color: var(--color-grey-1);
+
+		margin-bottom: 2rem;
+	}
+}

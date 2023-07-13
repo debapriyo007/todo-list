@@ -1,0 +1,41 @@
+@use '../../sass/mixins' as *;
+
+.btn {
+	&,
+	&:link,
+	&:visited {
+		@include flexCenter;
+		@include btnReset;
+		width: 124px;
+		height: 40px;
+		color: #fff;
+		border-radius: 4px;
+		// margin: 0;
+
+		background: #999;
+		// background: var(--color-grey-1);
+
+		&.delete {
+			background: var(--color-delete);
+		}
+
+		&.warning {
+			background: var(--color-warning);
+			color: #000;
+		}
+		// ICON
+		span {
+			margin-right: 3px;
+		}
+
+		&:hover {
+			@include btnShadow(0.75rem, 1.5rem, -2px, 0.1);
+		}
+
+		&:active,
+		&:focus {
+			outline: none;
+			@include btnShadow(0.5rem, 1rem, -1px, 0.1);
+		}
+	}
+}

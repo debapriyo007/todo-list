@@ -1,0 +1,47 @@
+.task {
+	&:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+
+	display: flex;
+	align-items: center;
+
+	&-desc {
+		cursor: pointer;
+	}
+}
+
+.check-box {
+	margin-right: 18px;
+
+	// visibility: hidden;
+	position: relative;
+	border: none;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 5px;
+		transform: translate(-20%, -20%);
+		height: 170%;
+		width: 170%;
+
+		background-color: #fff;
+		border: 1px solid #828282;
+		border-radius: 4px;
+	}
+
+	&:checked::after {
+		font-family: 'Material Icons';
+		font-size: 20px;
+		color: #fff;
+		content: '\e876';
+		background-color: var(--color-secondary);
+		border-color: var(--color-secondary);
+	}
+
+	&:checked + .task-desc {
+		text-decoration: line-through;
+	}
+}

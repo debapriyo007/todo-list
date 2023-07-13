@@ -1,0 +1,51 @@
+@use './sass/variables' as *;
+@use 'sass:math';
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a,
+button,
+input,
+label {
+	-webkit-tap-highlight-color: transparent;
+}
+
+html {
+	font-size: math.div(100, 16) * 10%; //62.5% - 10px
+	// font-size: 10px;
+
+	@media only screen and (max-width: $lg) {
+		font-size: math.div(100, 16) * 9%;
+	}
+
+	@media only screen and (max-width: $md) {
+		font-size: math.div(100, 16) * 8%;
+	}
+}
+
+body {
+	font-family: var(--font-primary);
+	font-size: var(--font-size);
+	font-weight: 500;
+	line-height: 150%;
+	padding: 0 5% 5% 5%;
+
+	color: var(--color-primary);
+
+	min-height: 100vh;
+}
+
+.icon-attribute {
+	text-align: center;
+	margin-top: -8px;
+	display: block;
+	width: 100%;
+	font-size: 0.75rem;
+	color: var(--color-grey-2);
+}

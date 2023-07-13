@@ -1,0 +1,20 @@
+@mixin boxShadow($shadowY, $shadowBlur, $opacity: 0.2) {
+	box-shadow: 0 $shadowY $shadowBlur rgba(#000, $opacity);
+}
+
+@mixin btnShadow($shadowY, $shadowBlur, $translateY, $opacity: 0.2) {
+	@include boxShadow($shadowY, $shadowBlur, $opacity);
+	transform: translateY($translateY);
+}
+
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin btnReset {
+	transition: all 0.2s;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
