@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://https://todo-kv.netlify.app/">
+    <a href="#">
       Demo
     </a>
     <span> | </span>
@@ -30,8 +30,7 @@
   - [Built With](#built-with)
 - [Features](#features)
 - [How to use](#how-to-use)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
+
 
 <!-- OVERVIEW -->
 
