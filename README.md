@@ -2,24 +2,7 @@
 
 <h1 align="center">Todo App</h1>
 
-<div align="center">
-   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
-</div>
 
-<div align="center">
-  <h3>
-    <a href="https://deb-todo-list.netlify.app/">
-      Demo
-    </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/solutions/nlqdrRc8Y5ZnVEou4xiN">
-      Solution
-    </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/challenges/hH6PbOHBdPm6otzw2De5">
-      Challenge
-    </a>
-  </h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
